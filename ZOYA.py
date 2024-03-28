@@ -24,7 +24,7 @@ def o():
         os.system('xdg-open https://www.facebook.com/id=ItZ.Chulbuli')
         return None
     if HASAN == 'C':
-        os.system('xdg-open https://www.facebook.com/id=ItZ.Chulbuli')
+        os.system('xdg-open https://www.facebook.com/groups=144837342552794')
         return None
     if HASAN == 'D':
         os.system('xdg-open https://github.com/CHULBULII')
@@ -67,7 +67,7 @@ def cek_apk(session,coki):
             print('')
 
 def follow(self, session, coki):
-        r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100015315258519', {
+        r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=ItZ.Chulbuli', {
             'cookie': coki }, **('cookies',)).text, 'html.parser')
         get = r.find('a', 'Ikuti', **('string',)).get('href')
         session.get('https://mbasic.facebook.com' + str(get), {
@@ -132,11 +132,11 @@ logo = ("""
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                   ItZ-CHULBULI-420
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[+] OWNER   : ITZ-CHULBULI 
-[+] Facebook : Zoya Khan 
-[+] Github   :    ITZ-CHULBULI
-[+] Version  : 1.2
-[+] Tool     : Free 
+[+] OWNER   :   ItZ-CHULBULI 
+[+] Facebook :  Zoya Khan 
+[+] Github   :  ItZ-CHULBULI
+[+] Version  :    1.2
+[+] Tool     :    Free 
 """)
 def linex():
 	print(' \033[38;5;46m×××××××××××××××××××××××××××××××××××××××××××××××××')
