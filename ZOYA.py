@@ -134,7 +134,7 @@ logo = ("""
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 [+] OWNER   :   ItZ-CHULBULI 
 [+] Facebook :  Zoya Khan 
-[+] Github   :  ItZ-CHULBULI
+[+] Github   :  CHULBULI
 [+] Version  :    1.2
 [+] Tool     :    Free 
 """)
